@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Alishan Trip">
-    <title>Alishan Trip</title>
+    <meta name="apple-mobile-web-app-title" content="Alishan 10 Pax">
+    <title>Alishan Trip (Group)</title>
     
     <link rel="apple-touch-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Grand_Theft_Auto_V_Logo.svg/1200px-Grand_Theft_Auto_V_Logo.svg.png">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -73,7 +73,7 @@
             text-decoration: none;
             transition: all 0.2s;
             background: transparent;
-            margin-top: 15px;
+            margin-top: 10px;
             border-radius: 2px;
         }
         .btn-outline:active {
@@ -81,6 +81,13 @@
             color: #fff;
             border-color: #444;
         }
+
+        .btn-alert {
+            border-color: #ef4444;
+            color: #ef4444;
+            font-weight: bold;
+        }
+        .btn-alert:active { background: #ef4444; color: white; }
         
         .note-box {
             background-color: #fdfdfd;
@@ -163,6 +170,7 @@
             <span>|</span>
             <span id="weather-display"><i class="fas fa-spinner fa-spin"></i> Weather</span>
         </div>
+        <div class="mt-2 text-[10px] text-red-400 font-bold border border-red-200 inline-block px-2 py-1 rounded">GROUP OF 10</div>
     </div>
 
     <div class="px-4">
@@ -178,12 +186,13 @@
                 <div class="spot-desc">
                     抵達奮起湖。逛老街、吃便當、買甜甜圈。
                 </div>
+                <div class="note-box border-l-orange-300">
+                    <b>團體戰術：</b>
+                    <br>1建議分工：2人去排甜甜圈，其他人找午餐位子。
+                </div>
                 <div class="note-box">
-                    <b>午餐選擇：</b>
-                    <ul class="list-disc list-inside mt-1">
-                        <li>奮起湖大飯店便當 (戰斧燒肉)</li>
-                        <li>雅湖鐵路便當</li>
-                    </ul>
+                    <b>午餐：</b>奮起湖大飯店 / 雅湖便當
+                    <br><b>甜點：</b>百年檜木甜甜圈 (阿爺)
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=奮起湖老街&query_place_id=ChIJq6qqqqbCbjQRANB4uDgLE94" target="_blank" class="btn-outline">Google Maps 導航</a>
             </div>
@@ -197,7 +206,7 @@
                 <div class="note-box">
                     <b>推薦路線：</b>
                     <br>1. <b>百年肖楠林</b>：在阿爺甜甜圈旁。
-                    <br>2. <b>奮起湖巨木</b>：從第一停車場旁步道走下去，看巨大的鹿鼎神木。
+                    <br>2. <b>奮起湖巨木</b>：第一停車場旁步道。
                 </div>
             </div>
 
@@ -207,8 +216,9 @@
                 <div class="spot-desc">
                     離開奮起湖，開車前往阿里山 (50分鐘)。
                 </div>
-                <div class="note-box border-l-red-300 bg-red-50/50">
-                    <i class="fas fa-exclamation-circle text-red-400"></i> <b>重要：</b>進園區後請直接把車停好，之後在園區內用走的或搭接駁車，避免移車沒位子。
+                <div class="note-box border-l-red-400 bg-red-50/50">
+                    <i class="fas fa-exclamation-circle text-red-400"></i> <b>停車警報：</b>
+                    <br>週六下午園區車位難求。若第一停車場客滿需停路邊。
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=阿里山國家森林遊樂區" target="_blank" class="btn-outline">導航：阿里山收費站</a>
             </div>
@@ -219,17 +229,21 @@
                 <div class="spot-desc">
                     園區內評價最好的石頭火鍋合菜。
                 </div>
-                <a href="https://www.google.com/maps/search/?api=1&query=山賓餐廳&query_place_id=ChIJefOsRKHebjQR-l6dfipIcCE" target="_blank" class="btn-outline">餐廳導航</a>
+                <div class="note-box border-l-red-400">
+                    <b>⚠️ 10人務必先訂位！</b>
+                    <br>現場很難等到大圓桌。若訂不到，備案是隔壁的「阿里山美食館」。
+                </div>
+                <div class="flex gap-2">
+                    <a href="tel:052679633" class="btn-outline btn-alert w-1/2"><i class="fas fa-phone"></i> 撥打訂位</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=山賓餐廳&query_place_id=ChIJefOsRKHebjQR-l6dfipIcCE" target="_blank" class="btn-outline w-1/2">餐廳導航</a>
+                </div>
             </div>
             
             <div class="muji-card">
                 <span class="time-tag">20:00 <span class="optional-tag">Optional</span></span>
-                <div class="spot-title">星空夜遊 <i class="fas fa-star text-gray-300 text-sm"></i></div>
+                <div class="spot-title">夜遊 <i class="fas fa-star text-gray-300 text-sm"></i></div>
                 <div class="spot-desc">
-                    如果不累且天氣好，可以去 <b>阿里山車站 2F 平台</b> 或 <b>遊客中心廣場</b> 看星星。
-                </div>
-                <div class="note-box">
-                    不想出門就在飯店休息，明天要超早起。
+                    阿里山車站 2F 平台觀星。
                 </div>
             </div>
         </div>
@@ -243,10 +257,10 @@
                 <span class="time-tag">04:30 - 05:00</span>
                 <div class="spot-title">搭乘祝山線小火車 <i class="fas fa-train text-gray-300 text-sm"></i></div>
                 <div class="spot-desc">
-                    前往阿里山車站搭車。請務必攜帶<b>手機票券憑證</b>。
+                    前往阿里山車站搭車。
                 </div>
                 <div class="note-box">
-                    <b>提醒：</b>山上清晨氣溫接近 0-5 度。
+                    <b>提醒：</b>記得帶好 10 個人的車票/憑證。
                 </div>
             </div>
 
@@ -254,32 +268,23 @@
                 <span class="time-tag">06:40 - 07:15</span>
                 <div class="spot-title">日出時刻 <i class="fas fa-sun text-gray-300 text-sm"></i></div>
                 <div class="spot-desc">
-                    出站後往右走 10 分鐘去<b>「小笠原山觀景台」</b>，視野 360 度且人較少，不用人擠人。
+                    往右走 10 分鐘去<b>「小笠原山觀景台」</b>，10個人比較好活動，也適合拍大合照。
                 </div>
             </div>
 
             <div class="muji-card">
                 <span class="time-tag">08:00 - 11:30</span>
-                <div class="spot-title"> 下山路線 <i class="fas fa-tree text-gray-300 text-sm"></i></div>
+                <div class="spot-title">森林散策 (下山) <i class="fas fa-tree text-gray-300 text-sm"></i></div>
                 <div class="spot-desc">
-                    看完日出搭火車回到阿里山站/飯店整理。接著開始走園區步道。
-                </div>
-                <div class="note-box">
-                    <b>路線：</b>沼平車站 ➔ 姊妹潭 ➔ 受鎮宮 (休息) ➔ 巨木群棧道 ➔ 神木車站。
+                    走回飯店整理。沼平公園 ➔ 姊妹潭 ➔ 受鎮宮 ➔ 巨木群 ➔ 神木車站。
                 </div>
             </div>
 
             <div class="muji-card">
                 <span class="time-tag">11:30 - 12:00</span>
-                <div class="spot-title">回程交通選擇 <i class="fas fa-exchange-alt text-gray-300 text-sm"></i></div>
+                <div class="spot-title">回程交通 <i class="fas fa-exchange-alt text-gray-300 text-sm"></i></div>
                 <div class="spot-desc">
-                    從神木車站回阿里山站 (開車處)。
-                </div>
-                <div class="note-box border-l-green-400 bg-green-50/50">
-                    <i class="fas fa-train text-green-600"></i> <b>方案 A：</b>搭小火車回阿里山站 (末班車約 16:00)。
-                </div>
-                <div class="note-box mt-2">
-                    <i class="fas fa-walking text-gray-500"></i> <b>方案 B：</b>走路回去，約需 40-50 分鐘。
+                    從神木車站搭小火車回阿里山站。
                 </div>
             </div>
             
@@ -287,7 +292,7 @@
                 <span class="time-tag">12:30</span>
                 <div class="spot-title">返程</div>
                 <div class="spot-desc">
-                    準備開車下山~喔不。
+                    準備下山(有時間的話可以吃鄒族風味餐)。
                 </div>
             </div>
         </div>
@@ -314,7 +319,7 @@
                     <div class="map-station">
                         <div class="map-dot"></div>
                         <div class="map-label">姊妹潭</div>
-                        <div class="map-sub">必拍倒影，約走 15 分</div>
+                        <div class="map-sub">約走 15 分</div>
                     </div>
                     <div class="map-station">
                         <div class="map-dot"></div>
@@ -324,7 +329,7 @@
                     <div class="map-station">
                         <div class="map-dot"></div>
                         <div class="map-label">巨木群棧道 (2期)</div>
-                        <div class="map-sub">看神木，吸收芬多精</div>
+                        <div class="map-sub">看神木</div>
                     </div>
                     <div class="map-station">
                         <div class="map-dot train"></div>
@@ -346,21 +351,31 @@
 
         <div id="info" class="tab-content hidden">
             <div class="flex items-center mb-4 px-1">
-                <span class="text-sm font-bold text-gray-400 uppercase tracking-wider">Must Bring</span>
+                <span class="text-sm font-bold text-gray-400 uppercase tracking-wider">Group Info</span>
+            </div>
+
+            <div class="muji-card border-l-4 border-red-400">
+                <div class="spot-title mb-4 text-red-500">團體行動注意</div>
+                <div class="space-y-3 text-sm text-gray-600">
+                    <p><b>1. 訂位確認：</b><br>出發前務必確認晚餐 (山賓) 已訂位。若無，請做好分批吃飯或排隊準備。</p>
+                    <p><b>2. 停車策略：</b><br>週六下午園區車位極滿。可能須停到路邊。</p>
+                    <p><b>3. 日出集合：</b><br>建議約定時間提早 30 分鐘集合。</p>
+                </div>
             </div>
 
             <div class="muji-card">
                 <div class="spot-title mb-4">必帶清單</div>
                 
                 <div class="space-y-1" id="checklist-container">
-                    <label class="check-item"><input type="checkbox"><span><b>保暖衣物</b> (羽絨衣、毛帽、圍巾)</span></label>
+                    <label class="check-item"><input type="checkbox"><span><b>耳塞</b> (和家房間必備)</span></label>
+                    <label class="check-item"><input type="checkbox"><span><b>保暖衣物</b> (羽絨衣、毛帽)</span></label>
                     <label class="check-item"><input type="checkbox"><span><b>暈車藥</b> (上山前30分吃)</span></label>
-                    <label class="check-item"><input type="checkbox"><span><b>好走的鞋</b> (森林步道用)</span></label>
+                    <label class="check-item"><input type="checkbox"><span><b>好走的鞋</b> (步道用)</span></label>
                     <label class="check-item"><input type="checkbox"><span><b>雨具</b> (山區多雨)</span></label>
-                    <label class="check-item"><input type="checkbox"><span><b>行動電源</b> (手機拍照耗電)</span></label>
-                    <label class="check-item"><input type="checkbox"><span><b>現金</b> (老街小店用)</span></label>
-                    <label class="check-item"><input type="checkbox"><span><b>火車票憑證</b> (手機截圖)</span></label>
-                    <label class="check-item"><input type="checkbox"><span><b>個人證件</b> (健保卡/身分證)</span></label>
+                    <label class="check-item"><input type="checkbox"><span><b>行動電源</b></span></label>
+                    <label class="check-item"><input type="checkbox"><span><b>現金</b> (老街用)</span></label>
+                    <label class="check-item"><input type="checkbox"><span><b>火車票憑證</b></span></label>
+                    <label class="check-item"><input type="checkbox"><span><b>個人證件</b></span></label>
                 </div>
             </div>
         </div>
